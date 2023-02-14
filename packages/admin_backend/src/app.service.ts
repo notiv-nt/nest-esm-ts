@@ -12,7 +12,8 @@ export class AppService {
   ) {}
 
   getHello() {
-    return this.userRepository.find();
+    throw new Error('Method not implemented.');
+    // return this.userRepository.find();
   }
 
   create() {
