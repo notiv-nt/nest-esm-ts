@@ -4,7 +4,7 @@
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "node --watch --loader ./misc/loader.mjs packages/admin_backend/src/main.ts",
+    "dev": "node --enable-source-maps --watch --loader ./misc/loader.mjs packages/admin_backend/src/main.ts",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
