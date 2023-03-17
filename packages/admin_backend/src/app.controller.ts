@@ -7,11 +7,11 @@ export class AppController {
 
   @Get()
   getHello() {
-    return this.appService.getHello();
+    this.appService.getHello();
   }
 
   @Get('/create')
-  test() {
-    return this.appService.create();
+  async test() {
+    return await this.appService.create();
   }
 }
