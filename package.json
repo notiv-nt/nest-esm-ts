@@ -9,7 +9,7 @@
     "lint": "npm run lint --workspaces"
   },
   "dependencies": {
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.4"
   },
   "workspaces": [
     "packages/*"
