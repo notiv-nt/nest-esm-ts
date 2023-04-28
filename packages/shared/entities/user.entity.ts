@@ -1,7 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import { some } from './some';
-
-console.log(some);
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany, type Relation } from 'typeorm';
+import { Order } from './order.entity.ts';
 
 @Entity()
 export class User {
@@ -16,4 +14,7 @@ export class User {
 
   @Column({ default: true })
   isActive: boolean;
+
+  @OneToMany(() => Order, (order) => order.user)
+  orders: Relation<Order[]>;
 }
